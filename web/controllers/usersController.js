@@ -24,7 +24,9 @@ const controlador = {
                
         users.push(newUser);
         fs.writeFileSync(__dirname+"/../database/users.json",JSON.stringify(users));
-       // req.session.usuariologueado = newUser;
+       
+        /******ver esto mas adelante para meter sesion y cookies*******/
+        // req.session.usuariologueado = newUser;
        // res.redirect("/users/profile/"+newUser.id);
     }
     
