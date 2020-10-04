@@ -8,21 +8,41 @@ input {
     border-left: none;
     border-right: none;
     border-color: rgba(170, 53, 53, 0.8);
-    padding: 0;
+    padding: 8px;
     margin: 8px 0 4px;
     resize: none;
     overflow: hidden;
 }
 
-.button {
-    background-color: #4CAF50;
-    border: none;
+h1 {
+    color: rgba(170, 53, 53, 0.8);
+    font-family: inherit;
+    font-size: 30px;
+}
+
+button {
+    background-color: rgba(170, 53, 53, 0.8);
+    border-radius: 4px;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 30px 2px;
     cursor: pointer;
-  }
+}
+
+button:hover {
+    background-color:rgba(182, 3, 3, 0.8)
+}
+
+button:active {
+    background-color: rgba(170, 53, 53, 0.8);
+    box-shadow: 0 8px #666;
+    transform: translateY(4px);
+}
+
+.errors {
+    color: rgb(204, 6, 39);
+}
