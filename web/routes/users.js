@@ -3,8 +3,9 @@ var router = express.Router();
 const usersController = require("../controllers/usersController");
 const { check, validationResult, body } = require('express-validator'); //debo requerir validator en ruta y en contoller
 /* GET users listing. */
+
 router.get('/', function (req, res, next) {
-  res.send('respond with a resource');
+  res.send('HASTA ACA LLEGO DE PRIMERA ');
 });
 
 router.get('/register', usersController.register);

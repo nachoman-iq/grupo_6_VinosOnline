@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/register.css">
+    <title>Pruductos</title>
+</head>
+<header>
+    <img src="/images/vinosOnlineLogo1.png" width="10%">
+</header>
+
+<body>
+
+    <form action="/products/product-edit/<%=product.product_id%> " method=" POST ">
+        <h1> Producto # <% = product.product_id %> </h1>
+        nombre:
+        <input type=" text " name=" product_name " value=" <% = product.product_name%> ">
+        
+        < Br>
+        precio:
+        < input type=" text " name=" product_price " value=" <% = product.product_price%> ">
+        < Br>
+        descripcion
+        < input type=" text " name="product_description " value=" <% = product.product_description%> ">
+        < Br>
+        < button type="submit "> guardar cambios </button>
+    </form>
+
+</body>
+
+</html>

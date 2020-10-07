@@ -3,7 +3,6 @@ const bcrypt = require('bcrypt');
 const fs = require('fs');
 const users = JSON.parse(fs.readFileSync(__dirname + "/../database/users.json")); //paras de users para uso global
 
-
 const controlador = {
     
     register: function (req, res ) {

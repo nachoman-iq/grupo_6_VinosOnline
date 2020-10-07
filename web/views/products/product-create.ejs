@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/register.css">
+
+    <title>Pruductos</title>
+</head>
+<!-- <header>
+    <img src="/images/vinosOnlineLogo1.png" width="10%">
+</header> -->
+
+<body>
+    <div class="container products-wrapper">
+        <div class="row">
+            <div class="col-12">
+                <h1>Formulario de Alta de productos</h>    
+            </div>
+        </div>
+        <div class="col-12">
+            <form action="'products/product-create'" method="post" enctype="multipart/form-data">
+                <div class="row product-detail">
+                    <div class="col-12 col-md-6">
+                        <label for="name" class="form-label">Nombre del producto:</label>
+                        <input type="text" id="name" name="name" placeholder="Marca Comercial" class="form-input">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="tipo" class="form-label">Tipo del producto:</label>
+                        <input type="text" id="tipo" name="tipo" placeholder="Ej Cavernet Suavignon" class="form-input">
+                    </div>
+                    
+                    <div class="col-12">
+                        <label for="description" class="form-label">Descipción:</label>
+                        <input type="text" id="descrpcion" name="descripcion" placeholder="Caracteristicas principales" class="form-input">
+                    
+                    <div class="col-12 col-md-6">
+                        <label for="tipo" class="form-label">Tiempo en barrica</label>
+                        <input type="text" id="tiempo" name="tiempo" placeholder="10 a 12 meses en barrica de roble" class="form-input">
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <label for="price" class="form-label">Precio del producto:</label>
+                        <input type="text" id="price" name="price" placeholder="Ej: 1.000,00" class="form-input">
+                    </div>
+           
+                    <div class="col-12 col-md-6">
+                        <label for="stock" class="form-label">Stock Inicial:</label>
+                        <input type="text" id="stock" name="stock" placeholder="Ej: 15" class="form-input">
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <input type="file" id="imagen" name="imagen"  >
+                    </div>
+                             
+                    <div class="col-12">
+                        <button type="submit" class="buy-now-button">Guardar producto</button>
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    
+
+</body>
+
+</html>
