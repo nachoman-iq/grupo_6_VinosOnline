@@ -6,7 +6,7 @@ const users = JSON.parse(fs.readFileSync(__dirname + "/../database/users.json"))
 const controlador = {
     
     register: function (req, res ) {
-        res.render('users/register');
+        res.render('../register');
     },
 
     store: function (req, res) {
